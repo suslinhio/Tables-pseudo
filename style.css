@@ -18,6 +18,10 @@ thead > :first-child {
     font-weight: 700;
 }
 
+thead > :first-child > :first-child {
+    padding: 10px 80px;
+}
+
 thead > :first-child > :not(:first-child){
     padding-top: 15px;
 }
@@ -63,9 +67,14 @@ tbody > :nth-child(odd) > :first-child {
 }
 
 .button {
+    box-sizing: border-box;
     display: inline-block;
     padding: 5px 15px;
     background-color: #155cb9;
     color: white;
     border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #043779;
 }
